@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+font-family: 'Tajawal', sans-serif;
+}
+.background-banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),url(background1.jpg);
+background-size: cover;
+background-position: center;
+}
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 37px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Update the justify-content property */
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #767473;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50);
+  text-align: center;
+  color: #fff;
+  height: 1000px; /* Set the desired height for the content */
+}
+.rozenblad{
+  width: 20%;
+  top: 2.5%;
+  position: absolute;
+  transform: translateY(-50);
+  text-align: center;
+  color: #81995C;
+}
+.foto-animation{
+  overflow: hidden;
+}
+
+}
+.foto-animation:hover img {
+  scale: 115%;
+}
+.foto-animation {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.foto {
+  max-width: 13%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.html-logo {
+  position: relative;
+}
+
+.html-logo .html {
+  width: 3%;
+  transform: scale(0.8) translateX(-104px) translateY(13.5px);
+}
+.css-logo {
+  position: relative;
+}
+.css-logo .css {
+  width: 3%;
+  transform: scale(0.74) translateX(0px) translateY(-78px);
+}
+.foto3-logo {
+  position: relative;
+}
+
+.foto3-logo .foto3 {
+  width: 3%;
+  transform: scale(1.1) translateX(78px) translateY(-116.5px);
+}
+
+h2 {
+  height: 40px;
+}
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  background-image: linear-gradient(150deg, #99925c, #43453b 50%, #4d604d);
+  margin-top: -20px; /* Adjust the value to move the button higher */
+}
+button {
+  /* ... (other properties) */
+  margin-top: 35px; /* Adjust the value to move the button higher */
+}
+button span {
+  display: flex;
+  border-radius: 6px;
+  padding: 13px 47px;
+  color: #fff;
+  font-size: 19px;
+  background-color: #111;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: transparent;
+}
+
+body {
+  overflow: hidden;
+  background: #121314;
+
+}
+/*-------------------------------------------------*/
+
+#info{
+  padding: 80px 0;
+  color: #ababab;
+}
+.row{
+  display; flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.info-col-1{
+  flex-basis: 35%;
+  position: relative;
+left: 350px; /* Adjust the value to move the image horizontally */
+top: -50px;
+}
+.info-col-1 img{
+  width: 20%;
+  border-radius: 15px;
+
+}
+.info-col-2{
+  flex-basis: 60%;
+  color: #B1B1B1;
+  position: relative;
+top: -555px; /* Adjust the value to move the heading vertically */
+left: 301px; /* Adjust the value to move the heading horizontally */
+width: 50%; /* Adjust the width as needed */
+margin: 0 auto; /* Center the container if desired */
+}
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+top: -280px; /* Adjust the value to move the heading vertically */
+left: 390px; /* Adjust the value to move the heading horizontally */
+}
+.info-col-2 p {
+  word-wrap: break-word; /* Allow long words to wrap within the container */
+}
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #81995C;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after{
+  width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span{
+  color: #81995C;
+  font-size: 14px;
+}
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+.text-introductie{
+  color: #C7C7C7
+}

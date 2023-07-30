@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Second Page</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="background-banner">
+      <div class="navbar custom-margin">
+        <ul>
+          <li><a href="Project Rozenblad.html">Home</a></li>
+          <li><a href="info.html">About Me</a></li>
+          <li><a href="projects.html">Project</a></li>
+          <li><a href="#">Download CV</a></li>
+        </ul>
+      </div>
+      <div id="info"></div>
+      <div class="container">
+        <div class="row">
+          <div class="info-col-1">
+            <img src="foto.jpg" alt="">
+          </div>
+          <div class="sub-title">
+            <h1 class="sub-title">About Me</h1>
+          </div>
+          <div class="info-col-2">
+            <p>Hello! I'm Jenello Rozenblad, and I have a deep passion for coding, designing websites, streaming video games, and working on selfmade projects in my free time.
+With a strong background in both coding and design, I love to bring ideas to life through the creation of visually stunning and highly functional websites. I enjoy the process of translating concepts into elegant and user-friendly interfaces, using my technical skills in HTML, CSS, and JavaScript. Building websites allows me to combine my creativity with problem-solving, resulting in immersive and engaging online experiences.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>HTML, CSS, Javascript, React.</li>
+                <li><span>Graphic Designer & Video Editor</span><br>Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro.</li>
+                <li><span>Video Editor</span><br>Sony Vegas Pro, Adobe After Effects, Adobe Premiere Pro, Audacity.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022 - Now </span><br>Studying Software Developer & Owner of E-Sports Team Invictus Go!</li>
+                <li><span>2022 - 2023</span><br>Freelance Graphic Design & Video Editor.</li>
+                <li><span>2019 - 2022</span><br>E-Sport Pro Player at Barrage Esports - Blackpool, Lancashire.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022 - Now </span><br>Studying Software Development at NHA.</li>
+                <li><span>2022</span><br>Graphic Designer Training at Competence Factory.</li>
+                <li><span>2021</span><br>Video Editor Training at DWM Trainingen.</li>
+                <li><span>2019 - 2021</span><br>ICT at ROC Hilversum.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
